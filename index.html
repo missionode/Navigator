@@ -3,8 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Live NavIC Navigator</title>
     <style>
+        body {
+            font-family: "Noto Sans", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: <weight>;
+            font-style: normal;
+            font-variation-settings:"wdth" 100;
+        }
         #map {
             height: 100vh;
             width: 100%;
@@ -14,7 +24,7 @@
             top: 10px;
             left: 10px;
             z-index: 1000;
-            background: rgba(255, 255, 255, 0.95);
+            background: rgba(255, 255, 255, 0.40);
             padding: 15px;
             border-radius: 8px;
             box-shadow: 0 2px 6px rgba(0,0,0,0.3);
@@ -84,7 +94,11 @@
 <body>
     <div class="control-panel">
         <div id="search-container">
-            <input type="text" id="destination" placeholder="Search location..." style="width: 100%; padding: 8px;">
+            <input type="text" id="destination" placeholder="Search location..." style="
+            width: 93%;
+            padding: 8px;
+            border: 1px solid #b1b1b1;
+            border-radius: 6px;">
             <div id="suggestions"></div>
         </div>
         <div id="navigation-controls">
